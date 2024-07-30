@@ -5,34 +5,6 @@ import pkg from "./package.json";
 const NodePolyfillPlugin = require("@rspack/plugin-node-polyfill");
 const { publicVars } = loadEnv({ prefixes: ["REACT_APP_", "mfe_"] });
 
-const stage = process.env.STAGE || "dev";
-
-const appConfigs: Record<
-  string,
-  Record<string, { local: string; prod: string }>
-> = {
-  dev: {
-    mfe_remote_1_child_1: {
-      local: "http://localhost:3003",
-      prod: `http://localhost:3003`,
-    },
-  },
-  staging: {
-    mfe_remote_1_child_1: {
-      local: "http://localhost:3003",
-      prod: `http://localhost:3003`,
-    },
-  },
-  production: {
-    mfe_remote_1_child_1: {
-      local: "http://localhost:3003",
-      prod: `http://localhost:3003`,
-    },
-  },
-};
-
-const appDomainConfig = appConfigs[stage] || {};
-
 const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
   name: pkg.name.replace(/-/g, "_"),
   filename: "remoteEntry.js",
@@ -57,9 +29,6 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
       singleton: true,
       requiredVersion: pkg.dependencies["@cnapp-ui/mfe-utils"],
     },
-  },
-  remotes: {
-    "mfe-remote-1-child-1": `mfe_remote_1_child_1@${appDomainConfig["mfe_remote_1_child_1"].local}/remoteEntry.js`,
   },
   runtimePlugins: [require.resolve("./mfe-runtime-plugin.ts")],
 };

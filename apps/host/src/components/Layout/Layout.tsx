@@ -20,6 +20,7 @@ export function Layout() {
           >
             <ErrorBoundary>
               <Box sx={{ display: "flex" }}>
+                host
                 <Sidebar />
                 <Outlet />
               </Box>

@@ -6,8 +6,8 @@ import {
   useNavigationType,
   NavigationType,
 } from "react-router-dom";
+import { routes } from "../../routes";
 import { NavigationEvent } from "@cnapp-ui/mfe-utils";
-import { useRoutes } from "../../routing/routes";
 
 interface NavigationManagerProps {
   children: ReactElement;
@@ -23,18 +23,18 @@ export function NavigationManager({
   const location = useLocation();
   const navigate = useNavigate();
   const navigationType = useNavigationType();
-  const routes = useRoutes(shellRoutingPrefix, appRoutingPrefix);
 
   useEffect(() => {
     function shellNavigationHandler(event: Event) {
       const { pathname, search } = (event as NavigationEvent).detail;
+      const getRoutes = routes(shellRoutingPrefix, appRoutingPrefix);
       if (
         (location.pathname === pathname && location.search === search) ||
-        !matchRoutes(routes, { pathname })
+        !matchRoutes(getRoutes, { pathname })
       ) {
         return;
       }
-      navigate(`${pathname}${search}`, {
+      navigate(pathname, {
         replace: navigationType === NavigationType.Replace,
       });
     }

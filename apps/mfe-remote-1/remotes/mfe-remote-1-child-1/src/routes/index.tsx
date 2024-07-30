@@ -14,14 +14,17 @@ export const routes = (
           shellRoutingPrefix={shellRoutingPrefix}
           appRoutingPrefix={appRoutingPrefix}
         >
-          <Outlet />
+          <>
+            mfe-remote-1-child-1
+            <Outlet />
+          </>
         </NavigationManager>
       </AppProviders>
     ),
     children: [
       {
         index: true,
-        element: <div>template app MfeRemote_1</div>,
+        element: <div>template app MfeRemote_1_Child_1</div>,
       },
       {
         path: "*",

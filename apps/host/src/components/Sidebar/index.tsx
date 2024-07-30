@@ -26,7 +26,6 @@ export function Sidebar() {
         height: "100vh",
         borderRight: 1,
         borderColor: "divider",
-        overflowY: "auto",
       }}
     >
       <List>
