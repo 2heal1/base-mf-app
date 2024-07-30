@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "extends": "@cnapp-ui/tsconfig-common/react-library.json",
+  "include": ["src"]
+}

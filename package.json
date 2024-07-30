@@ -1,0 +1,35 @@
+{
+  "name": "@epsagon/cnapp-ui",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.5.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "nx": "17.1.3",
+    "plop": "^3.1.2",
+    "prettier": "^2.8.8",
+    "yargs": "^17.7.2"
+  },
+  "scripts": {
+    "dev": "DEV_MODE=true nx run-many -t dev --output-style stream --parallel 30",
+    "dev:remote": "node ./scripts/dev.js",
+    "dev:managed": "node ./scripts/dev.js --managed",
+    "dev:vite": "node ./scripts/runViteApp.js",
+    "migrate:vite": "node ./scripts/migrateToVite.js",
+    "migrate:rsbuild": "node ./scripts/rsbuild/migrate.js",
+    "migrate:versioning": "node ./scripts/versioning/migrate.js",
+    "lint": "nx run-many -t lint --output-style stream",
+    "lint:fix": "yarn lint --fix",
+    "nx:format": "nx format:write --projects apps/host apps/remote-example",
+    "nx:check": "nx format:check --projects apps/* packages/* --verbose",
+    "gen": "plop",
+    "e2e-tests": "cd tests/e2e && yarn e2e-tests",
+    "update-version": "./scripts/versioning/update-version.sh"
+  }
+}

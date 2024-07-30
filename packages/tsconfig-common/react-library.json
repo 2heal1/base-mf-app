@@ -1,0 +1,16 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  },
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "target": "ES2018",
+      "module": "commonjs",
+      "lib": ["es2018"],
+      "resolveJsonModule": true,
+      "isolatedModules": true
+    }
+  }
+}

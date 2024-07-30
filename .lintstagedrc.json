@@ -1,0 +1,4 @@
+{
+  "*.{md,json}": ["prettier --list-different"],
+  "*.{js,ts,jsx,tsx}": ["prettier --list-different", "eslint --max-warnings 0"]
+}

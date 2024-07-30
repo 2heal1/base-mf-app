@@ -1,0 +1,8 @@
+{
+  "name": "@cnapp-ui/tsconfig-common",
+  "version": "0.1.0",
+  "packageManager": "yarn@3.5.1",
+  "files": [
+    "*.json"
+  ]
+}
