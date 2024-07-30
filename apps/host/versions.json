@@ -1,11 +1,14 @@
 {
   "dev": {
-    "mfe-remote-1": "1.0.0"
+    "mfe-remote-1": "1.0.0",
+    "mfe-remote-2": "1.0.0"
   },
   "staging": {
-    "mfe-remote-1": "1.0.0"
+    "mfe-remote-1": "1.0.0",
+    "mfe-remote-2": "1.0.0"
   },
   "production": {
-    "mfe-remote-1": "1.0.0"
+    "mfe-remote-1": "1.0.0",
+    "mfe-remote-2": "1.0.0"
   }
 }

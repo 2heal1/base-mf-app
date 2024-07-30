@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Box, useTheme } from "@mui/material";
 import { horizontalLayoutStyle, mfeContainerStyle } from "./styles";
 import { ErrorBoundary } from "@cnapp-ui/mfe-utils";
+import { Sidebar } from "../Sidebar";
 
 export function Layout() {
   const theme = useTheme();
@@ -18,8 +19,10 @@ export function Layout() {
             paddingBottom={8}
           >
             <ErrorBoundary>
-              <Box>Host Layout</Box>
-              <Outlet />
+              <Box sx={{ display: "flex" }}>
+                <Sidebar />
+                <Outlet />
+              </Box>
             </ErrorBoundary>
           </Box>
         </Box>
