@@ -7,3 +7,7 @@
  */
 
 // generated declarations
+declare module "mfe-remote-1/bootstrap" {
+  type MountFn = import("@cnapp-ui/mfe-utils").MountFn;
+  export const mount: MountFn;
+}

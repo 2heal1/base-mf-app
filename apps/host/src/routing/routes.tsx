@@ -4,8 +4,11 @@ import { Layout } from "../components/Layout/Layout";
 import { Box } from "@mui/material";
 import GlobalNavigationRemote from "../components/GlobalNavigationRemote";
 // injected routing prefix
+import { mfeRemote_1RoutingPrefix } from "./constants";
+import { MFENode } from "@cnapp-ui/mfe-utils";
 
 // Lazy load remote applications
+const MfeRemote_1Lazy = lazy(() => import("../components/MfeRemote_1Remote"));
 
 interface MFERoute {
   path: string;
@@ -20,14 +23,14 @@ const generateRoutes = (mfeRoutes: MFERoute[]): RouteObject[] => {
       element: (
         <Box>
           {[GlobalNavigationRemote, Layout].map((Component) => (
-            <Component />
+            <Component key={Component.name} />
           ))}
         </Box>
       ),
       children: [
         {
           index: true,
-          element: <Navigate to={`/main/`} replace />,
+          element: <Navigate to={`/`} replace />,
         },
         ...mfeRoutes,
         {
@@ -43,6 +46,14 @@ export const useRoutes = () => {
   const mfeRoutes = useMemo<MFERoute[]>(() => {
     return [
       // Injecting Routes MFEs
+      {
+        path: `/${mfeRemote_1RoutingPrefix}/*`,
+        element: (
+          <MFENode>
+            <MfeRemote_1Lazy />
+          </MFENode>
+        ),
+      },
     ];
   }, []);
 

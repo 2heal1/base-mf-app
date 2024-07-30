@@ -17,8 +17,8 @@ export function Layout() {
             sx={mfeContainerStyle(theme)}
             paddingBottom={8}
           >
-            <div>dsufhidsa</div>
             <ErrorBoundary>
+              <Box>Host Layout</Box>
               <Outlet />
             </ErrorBoundary>
           </Box>
