@@ -21,6 +21,10 @@ const appConfigs: Record<
       local: "http://localhost:3002",
       prod: `http://localhost:3002`,
     },
+    z_mfe_remote_3: {
+      local: "http://localhost:3004",
+      prod: `http://localhost:3004`,
+    },
   },
   staging: {
     mfe_remote_1: {
@@ -31,6 +35,10 @@ const appConfigs: Record<
       local: "http://localhost:3002",
       prod: `http://localhost:3002`,
     },
+    z_mfe_remote_3: {
+      local: "http://localhost:3004",
+      prod: `http://localhost:3004`,
+    },
   },
   production: {
     mfe_remote_1: {
@@ -40,6 +48,10 @@ const appConfigs: Record<
     mfe_remote_2: {
       local: "http://localhost:3002",
       prod: `http://localhost:3002`,
+    },
+    z_mfe_remote_3: {
+      local: "http://localhost:3004",
+      prod: `http://localhost:3004`,
     },
   },
 };
@@ -71,6 +83,7 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
   remotes: {
     "mfe-remote-1": `mfe_remote_1@${appDomainConfig["mfe_remote_1"].local}/remoteEntry.js`,
     "mfe-remote-2": `mfe_remote_2@${appDomainConfig["mfe_remote_2"].local}/remoteEntry.js`,
+    "z-mfe-remote-3": `z_mfe_remote_3@${appDomainConfig["z_mfe_remote_3"].local}/remoteEntry.js`,
   },
   runtimePlugins: [require.resolve("./mfe-runtime-plugin.ts")],
 };

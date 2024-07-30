@@ -1,12 +1,12 @@
 {
-  "name": "mfe-remote-1-child-1",
+  "name": "z-mfe-remote-3",
   "version": "0.1.0",
   "packageManager": "yarn@3.5.1",
   "dependencies": {
     "@cnapp-ui/mfe-utils": "*",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "5.15.2",
+    "@mui/material": "5.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
@@ -40,8 +40,8 @@
     "@testing-library/user-event": "^14.5.2"
   },
   "scripts": {
-    "dev": "rsbuild dev --port 3003",
-    "dev:open-browser": "rsbuild dev --open --port 3003",
+    "dev": "rsbuild dev --port 3004",
+    "dev:open-browser": "rsbuild dev --open --port 3004",
     "build": "rsbuild build",
     "test": "jest --watchAll",
     "deploy": "cdk -a 'ts-node deploy.config.ts' -o '.cdk' deploy --require-approval=never && ts-node update-mfe-api.ts",

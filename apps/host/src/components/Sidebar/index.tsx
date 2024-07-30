@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import {
   mfeRemote_1RoutingPrefix,
   mfeRemote_2RoutingPrefix,
+  zMfeRemote_2RoutingPrefix,
 } from "../../routing/constants";
 
 export function Sidebar() {
@@ -40,6 +41,13 @@ export function Sidebar() {
           <ListItemButton>
             <Link to={mfeRemote_2RoutingPrefix}>
               <ListItemText primary={mfeRemote_2RoutingPrefix} />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem key={zMfeRemote_2RoutingPrefix} button>
+          <ListItemButton>
+            <Link to={zMfeRemote_2RoutingPrefix}>
+              <ListItemText primary={zMfeRemote_2RoutingPrefix} />
             </Link>
           </ListItemButton>
         </ListItem>

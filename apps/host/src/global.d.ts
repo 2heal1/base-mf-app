@@ -15,3 +15,7 @@ declare module "mfe-remote-2/bootstrap" {
   type MountFn = import("@cnapp-ui/mfe-utils").MountFn;
   export const mount: MountFn;
 }
+declare module "z-mfe-remote-3/bootstrap" {
+  type MountFn = import("@cnapp-ui/mfe-utils").MountFn;
+  export const mount: MountFn;
+}

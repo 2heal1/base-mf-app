@@ -21,7 +21,6 @@ const SettingsRouter: React.FC<SettingsRouterProps> = ({
   shellRoutingPrefix,
   appRoutingPrefix,
 }) => {
-  console.log({ shellRoutingPrefix, appRoutingPrefix });
   const routes = useRoutes(shellRoutingPrefix, appRoutingPrefix);
   const router = useMemo(
     () =>
