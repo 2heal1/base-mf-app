@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Box, useTheme } from "@mui/material";
 import { horizontalLayoutStyle, mfeContainerStyle } from "./styles";
 import { ErrorBoundary } from "@cnapp-ui/mfe-utils";
+import { VersionDisplay } from "external-package-version-display";
 import { Sidebar } from "../Sidebar";
 
 export function Layout() {
@@ -19,8 +20,12 @@ export function Layout() {
             paddingBottom={8}
           >
             <ErrorBoundary>
+              <Box>
+                <Box>MFE: host</Box> external-package-version-display Required
+                Version: 1.0.0
+                <VersionDisplay />
+              </Box>
               <Box sx={{ display: "flex" }}>
-                host
                 <Sidebar />
                 <Outlet />
               </Box>

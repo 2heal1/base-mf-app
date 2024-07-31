@@ -64,6 +64,7 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
     "./bootstrap": "./src/bootstrap.tsx",
   },
   shared: {
+    ...pkg.dependencies,
     react: {
       singleton: true,
       requiredVersion: pkg.dependencies.react,

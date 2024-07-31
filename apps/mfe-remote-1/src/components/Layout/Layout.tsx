@@ -5,6 +5,7 @@ import { horizontalLayoutStyle, mfeContainerStyle } from "./styles";
 import { ErrorBoundary } from "@cnapp-ui/mfe-utils";
 import { Sidebar } from "../Sidebar";
 import { NavigationManager } from "../NavigationManager";
+import { VersionDisplay } from "external-package-version-display";
 
 export const Layout = ({
   shellRoutingPrefix,
@@ -25,8 +26,12 @@ export const Layout = ({
             <Box display="flex">
               <Box flex={4} sx={mfeContainerStyle(theme)} paddingBottom={8}>
                 <ErrorBoundary>
+                  <Box>
+                    <Box>MFE: mfe-remote-1</Box>{" "}
+                    external-package-version-display Required Version: 1.0.1
+                    <VersionDisplay />
+                  </Box>
                   <Box sx={{ display: "flex" }}>
-                    mfe-remote-1
                     <Sidebar />
                     <Outlet />
                   </Box>

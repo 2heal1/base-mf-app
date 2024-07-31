@@ -3709,6 +3709,46 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
+external-package-version-display@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-1.0.0.tgz#2f4fb0861ea114e140b338096e4aecdd44327217"
+  integrity sha512-js33Or3AOU0FsWN+WTa9Xk6fKxcjf53Re3l8Day7lgE2P5psXhtdiTAHcA7mg6Z1cokm5LJL7mnTK/3xOXrybg==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
+external-package-version-display@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-1.0.1.tgz#da07ea93b2d82cb65fc4705b9632984a1375c64d"
+  integrity sha512-MBrOgvh2j2qEipNFLRtQ892T6YRn03K7koVLrPI9c1/udccfkt+t/UUmYSX0pNRmCpN43e9dkw8HWHlerrBHVA==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
+external-package-version-display@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-1.1.0.tgz#662a015d8bdbadbcd8204423bd97d6b31951f4d7"
+  integrity sha512-McSStV2OiYT/skJ9mNQBDUblV1FIhj1Inrt8LDjeOKdOk4htfP1Hg25dMwAikn20s4Jz2JNqhfACwqMgip1sCw==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
+external-package-version-display@1.23.45:
+  version "1.23.45"
+  resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-1.23.45.tgz#41d7f542f0ee19eafcbbe816043c0d24a73a5326"
+  integrity sha512-4FVZuz/LCehaZxXCTcvWBlLAoXNbF2yjJ7V33OLfgCshZnVEcCWrmGeHnk8Cx+0zZMHcvXyjyFbvRVxAMB4vTw==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
+external-package-version-display@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-2.0.0.tgz#82d065c3f4c04c4293aab103712e68c794c80621"
+  integrity sha512-jchqyBr7Lfohs3CDhvkBLrwS9/XYIZejjm2RofR+tXMwb1GI+XA/79jMiD1MM5XocnwdiVJDP6G1mMUq7YIEuw==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
