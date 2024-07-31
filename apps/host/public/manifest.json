@@ -1,6 +1,6 @@
 {
-  "short_name": "Panoptica",
-  "name": "Panoptica App",
+  "short_name": "Base MF App",
+  "name": "Base ModuleFederation App",
   "icons": [
     {
       "src": "favicon.ico",

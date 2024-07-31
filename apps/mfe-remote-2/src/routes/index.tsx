@@ -7,6 +7,9 @@ import React from "react";
 const ExternalZMFERemote3Component = React.lazy(
   () => import("z-mfe-remote-3/ExternalZMFERemote3Component"),
 );
+const ExternalMFERemote1Child1Component = React.lazy(
+  () => import("mfe-remote-1-child-1/ExternalMFERemote1Child1Component"),
+);
 
 export const routes = (
   shellRoutingPrefix?: string,
@@ -33,6 +36,7 @@ export const routes = (
             external-package-version-display Required Version: 2.0.0
             <VersionDisplay />
             <ExternalZMFERemote3Component />
+            <ExternalMFERemote1Child1Component />
           </Box>
         ),
       },

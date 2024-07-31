@@ -10,6 +10,8 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
   filename: "remoteEntry.js",
   exposes: {
     "./bootstrap": "./src/bootstrap.tsx",
+    "./ExternalMFERemote1Child1Component":
+      "./src/components/ExternalMFERemote1Child1Component/index.tsx",
   },
   remotes: {
     "z-mfe-remote-3": "z_mfe_remote_3@http://localhost:3004/remoteEntry.js",

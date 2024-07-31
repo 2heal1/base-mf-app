@@ -15,6 +15,8 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
   },
   remotes: {
     "z-mfe-remote-3": "z_mfe_remote_3@http://localhost:3004/remoteEntry.js",
+    "mfe-remote-1-child-1":
+      "mfe_remote_1_child_1@http://localhost:3003/remoteEntry.js",
   },
   shared: {
     ...pkg.dependencies,

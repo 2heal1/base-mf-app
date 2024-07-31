@@ -1183,7 +1183,7 @@
     react-is "^18.3.1"
     react-transition-group "^4.4.5"
 
-"@mui/material@^5.13.2":
+"@mui/material@5.16.6", "@mui/material@^5.13.2":
   version "5.16.6"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.16.6.tgz#c7d695f4a9a473052dc086e64471d0435b7e4a52"
   integrity sha512-0LUIKBOIjiFfzzFNxXZBRAyr9UQfmTAFzbt6ziOU2FDXhorNN2o3N9/32mNJbCA8zJo2FqFU6d3dtoqUDyIEfA==
@@ -3733,19 +3733,22 @@ external-package-version-display@1.1.0:
     react "^18.2.0"
     react-dom "^18.2.0"
 
-external-package-version-display@1.23.45:
-  version "1.23.45"
-  resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-1.23.45.tgz#41d7f542f0ee19eafcbbe816043c0d24a73a5326"
-  integrity sha512-4FVZuz/LCehaZxXCTcvWBlLAoXNbF2yjJ7V33OLfgCshZnVEcCWrmGeHnk8Cx+0zZMHcvXyjyFbvRVxAMB4vTw==
-  dependencies:
-    react "^18.2.0"
-    react-dom "^18.2.0"
-
 external-package-version-display@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-2.0.0.tgz#82d065c3f4c04c4293aab103712e68c794c80621"
   integrity sha512-jchqyBr7Lfohs3CDhvkBLrwS9/XYIZejjm2RofR+tXMwb1GI+XA/79jMiD1MM5XocnwdiVJDP6G1mMUq7YIEuw==
   dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
+external-package-version-display@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/external-package-version-display/-/external-package-version-display-2.1.0.tgz#a28a46e13cca255090c6d60fa35f4fba0fd62b67"
+  integrity sha512-Pp9f+qGgsawY7/cw1ifQB+46cVXxsGBRbi3J12CBY3OHT5muOdKKdgYwkjUoOTIFDG8ERUUkKR19Op/LUsxmRQ==
+  dependencies:
+    "@emotion/react" "^11.11.0"
+    "@emotion/styled" "^11.11.0"
+    "@mui/material" "5.16.6"
     react "^18.2.0"
     react-dom "^18.2.0"
 
