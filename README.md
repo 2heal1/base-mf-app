@@ -4,6 +4,13 @@
   <p>Base module federation application.<p>
 </div>
 
+This project is built on React, Module Federation, and Rspack. It is designed to reproduce our shared dependencies issue.
+To accomplish this, we have created a new external package called [external-package-version-display](https://github.com/idonava/external-package-version-display), which is used in all of the project MFEs.
+
+### Issues
+
+Please check our [repository issues page](https://github.com/idonava/base-mf-app/issues).
+
 ### Instructions
 
 To get started with the application, follow these steps:
