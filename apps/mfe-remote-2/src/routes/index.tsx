@@ -3,6 +3,10 @@ import { AppProviders } from "../components/AppProviders";
 import { NavigationManager } from "../components/NavigationManager";
 import { Box } from "@mui/material";
 import { VersionDisplay } from "external-package-version-display";
+import React from "react";
+const ExternalZMFERemote3Component = React.lazy(
+  () => import("z-mfe-remote-3/ExternalZMFERemote3Component"),
+);
 
 export const routes = (
   shellRoutingPrefix?: string,
@@ -28,6 +32,7 @@ export const routes = (
             <Box>MFE: mfe-remote-2</Box>
             external-package-version-display Required Version: 2.0.0
             <VersionDisplay />
+            <ExternalZMFERemote3Component />
           </Box>
         ),
       },

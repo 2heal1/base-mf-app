@@ -11,6 +11,10 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
   exposes: {
     "./bootstrap": "./src/bootstrap.tsx",
   },
+  remotes: {
+    "z-mfe-remote-3": "z_mfe_remote_3@http://localhost:3004/remoteEntry.js",
+    "mfe-remote-2": "mfe_remote_2@http://localhost:3002/remoteEntry.js",
+  },
   shared: {
     ...pkg.dependencies,
     react: {
