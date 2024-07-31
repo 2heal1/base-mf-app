@@ -35,6 +35,10 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
       singleton: true,
       requiredVersion: pkg.dependencies["@cnapp-ui/mfe-utils"],
     },
+    "external-package-version-display": {
+      singleton: true,
+      requiredVersion: pkg.dependencies["external-package-version-display"],
+    },
   },
   runtimePlugins: [require.resolve("./mfe-runtime-plugin.ts")],
 };
