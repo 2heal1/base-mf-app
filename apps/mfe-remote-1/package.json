@@ -16,8 +16,7 @@
   },
   "devDependencies": {
     "@rspack/plugin-node-polyfill": "^0.5.8",
-    "@module-federation/enhanced": "^0.1.12",
-    "@module-federation/runtime": "^0.1.12",
+    "@module-federation/enhanced": "^0.3.3",
     "@types/jest": "^29.5.12",
     "@types/node": "^16.18.32",
     "@types/react": "^18.2.6",

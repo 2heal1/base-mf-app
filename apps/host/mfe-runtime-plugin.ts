@@ -1,5 +1,5 @@
 import versions from "./versions.json";
-import { FederationRuntimePlugin } from "@module-federation/runtime/types";
+import { FederationRuntimePlugin } from "@module-federation/enhanced/runtime";
 
 const stage = process.env.REACT_APP_STAGE || "dev";
 

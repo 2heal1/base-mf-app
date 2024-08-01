@@ -874,6 +874,13 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@module-federation/bridge-react-webpack-plugin@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/bridge-react-webpack-plugin/-/bridge-react-webpack-plugin-0.3.3.tgz#c38d36a5642f311f325cbc1b30ab873eb6d83c20"
+  integrity sha512-o7cf+nXg7/musHFI5w4BDvzTFjMGwHwVfSxGkvN1yHxeZCdIoME3F9hlgc0niDIRfIBOIUuPBJ3qBY/EKD5+5g==
+  dependencies:
+    "@module-federation/sdk" "0.3.3"
+
 "@module-federation/dts-plugin@0.1.21":
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/@module-federation/dts-plugin/-/dts-plugin-0.1.21.tgz#dd5c843a93266ea9442ef1ff000fc4f53e699a42"
@@ -895,14 +902,26 @@
     rambda "^9.1.0"
     ws "8.17.0"
 
-"@module-federation/enhanced@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@module-federation/enhanced/-/enhanced-0.0.13.tgz#df3b9d5ba830b9af2d00d760b7b05f9c0e4cf788"
-  integrity sha512-9WHFhKpxD7HQaPdVW66yz2a4YV7wTDtrwZbF7GLtCSS1bwHUCtwRVersV1oMqWATxPWyeQylG77R0B8WC7QKYw==
+"@module-federation/dts-plugin@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/dts-plugin/-/dts-plugin-0.3.3.tgz#6ddc5bcdd45c77e73f47684d3a38c22a8b92955c"
+  integrity sha512-ZBwIuhsYmv55fIEqNIf4Svtq8dyXduVm0cA6gaEePZ7rmMoIp0UO+xr1VmVGgrZYDWuGagM6rNGx8CK+WSugiw==
   dependencies:
-    "@module-federation/runtime-tools" "0.0.13"
-    "@module-federation/sdk" "0.0.13"
-    upath "2.0.1"
+    "@module-federation/managers" "0.3.3"
+    "@module-federation/sdk" "0.3.3"
+    "@module-federation/third-party-dts-extractor" "0.3.3"
+    adm-zip "^0.5.10"
+    ansi-colors "^4.1.3"
+    axios "^1.6.7"
+    chalk "3.0.0"
+    fs-extra "9.1.0"
+    isomorphic-ws "5.0.0"
+    koa "2.11.0"
+    lodash.clonedeepwith "4.5.0"
+    log4js "6.9.1"
+    node-schedule "2.1.1"
+    rambda "^9.1.0"
+    ws "8.17.1"
 
 "@module-federation/enhanced@^0.1.12":
   version "0.1.21"
@@ -917,12 +936,36 @@
     "@module-federation/sdk" "0.1.21"
     upath "2.0.1"
 
+"@module-federation/enhanced@^0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/enhanced/-/enhanced-0.3.3.tgz#15b695a6376503f1cd07d6b4c6602bbda14829bc"
+  integrity sha512-OGB0tntoO/j4Uem3Kvn1KNUaS/s3mGdjxjiJaANT45VnGmDTIVyeWTAHYAeDrrdpksMTTIydvVGvdPoh+JhLaQ==
+  dependencies:
+    "@module-federation/bridge-react-webpack-plugin" "0.3.3"
+    "@module-federation/dts-plugin" "0.3.3"
+    "@module-federation/managers" "0.3.3"
+    "@module-federation/manifest" "0.3.3"
+    "@module-federation/rspack" "0.3.3"
+    "@module-federation/runtime-tools" "0.3.3"
+    "@module-federation/sdk" "0.3.3"
+    btoa "^1.2.1"
+    upath "2.0.1"
+
 "@module-federation/managers@0.1.21":
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/@module-federation/managers/-/managers-0.1.21.tgz#c0ca089453308371f285b43a28b0bfe58ff61dfd"
   integrity sha512-rmN379q8SIovzZBK3s9z1KE84wXgeJR83cFdHJo/1xDAiou7WneW/fyefIvMsGN61hfFxygHoK0GcgXinFq9GA==
   dependencies:
     "@module-federation/sdk" "0.1.21"
+    find-pkg "2.0.0"
+    fs-extra "9.1.0"
+
+"@module-federation/managers@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/managers/-/managers-0.3.3.tgz#c222c174f9a975a34acef91370c43f5973936115"
+  integrity sha512-AW1eBUh2IZmHA2QtztAmfS1CO+hE3YB1aoT7xaJRHlOqBTsKE/yBU4QOjRt3IcVkyvFOhszk9O4lkTRPt9e/Lg==
+  dependencies:
+    "@module-federation/sdk" "0.3.3"
     find-pkg "2.0.0"
     fs-extra "9.1.0"
 
@@ -937,6 +980,17 @@
     chalk "3.0.0"
     find-pkg "2.0.0"
 
+"@module-federation/manifest@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/manifest/-/manifest-0.3.3.tgz#2567dbef953bac9901d6e3602fb8909bb3d03930"
+  integrity sha512-fCKCfTLuRAJmjyEVuq22AKWikEcZYdfT7MswIxYNLQ/+vl7rWU7/IMN9o8q4EFEq/SIAbHjs3h900bdQlgNQ5Q==
+  dependencies:
+    "@module-federation/dts-plugin" "0.3.3"
+    "@module-federation/managers" "0.3.3"
+    "@module-federation/sdk" "0.3.3"
+    chalk "3.0.0"
+    find-pkg "2.0.0"
+
 "@module-federation/rspack@0.1.21":
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/@module-federation/rspack/-/rspack-0.1.21.tgz#8085b50840b3cf6fc48fb2f5e24671dcc6207a52"
@@ -948,13 +1002,17 @@
     "@module-federation/runtime-tools" "0.1.21"
     "@module-federation/sdk" "0.1.21"
 
-"@module-federation/runtime-tools@0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@module-federation/runtime-tools/-/runtime-tools-0.0.13.tgz#952ec8b69c7beb0f37ea9646629a33a8a5af70b5"
-  integrity sha512-pbp82JEzI9aWSNDrLGk49spbAe5h6RxQv5RlCCN3mxbUCqfT8Mz1fozqQ5VOZT2o5rJDatoHd3S04bx7/4FhrA==
+"@module-federation/rspack@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/rspack/-/rspack-0.3.3.tgz#611ecb3cda69126e9f891417f4feaf7467affa0c"
+  integrity sha512-FuMkO29SoeDjUexxPgudgcF48j2XZyIPrnZBGoH8GKxQaNRJY0+sg75tMR/3fgmunzrebC2VNrsQr4ED9CqRFg==
   dependencies:
-    "@module-federation/runtime" "0.0.13"
-    "@module-federation/webpack-bundler-runtime" "0.0.13"
+    "@module-federation/bridge-react-webpack-plugin" "0.3.3"
+    "@module-federation/dts-plugin" "0.3.3"
+    "@module-federation/managers" "0.3.3"
+    "@module-federation/manifest" "0.3.3"
+    "@module-federation/runtime-tools" "0.3.3"
+    "@module-federation/sdk" "0.3.3"
 
 "@module-federation/runtime-tools@0.1.21":
   version "0.1.21"
@@ -972,12 +1030,13 @@
     "@module-federation/runtime" "0.1.6"
     "@module-federation/webpack-bundler-runtime" "0.1.6"
 
-"@module-federation/runtime@0.0.13", "@module-federation/runtime@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@module-federation/runtime/-/runtime-0.0.13.tgz#040af7a98ed2cdbad0fb1b5b75c159823d22e215"
-  integrity sha512-c7TCfNQZvNV4ITCLQyDC7AG7AN3uPxFvBW7xNZ38EOIjuQjBm0JoAr8pxIoK6cdNf5VToIbVHaEJ1D+9DaJZmA==
+"@module-federation/runtime-tools@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/runtime-tools/-/runtime-tools-0.3.3.tgz#8fd662c75687702716d06781f002ff43b454be6e"
+  integrity sha512-0VV2Xmn9vvziWj9609LjeKFn4YacY8/fKrChx7AXkm858CQs50zb0szgOrJgQNYrctSGUlkVxrX6LE/LbaOLzA==
   dependencies:
-    "@module-federation/sdk" "0.0.13"
+    "@module-federation/runtime" "0.3.3"
+    "@module-federation/webpack-bundler-runtime" "0.3.3"
 
 "@module-federation/runtime@0.1.21", "@module-federation/runtime@^0.1.12":
   version "0.1.21"
@@ -993,10 +1052,12 @@
   dependencies:
     "@module-federation/sdk" "0.1.6"
 
-"@module-federation/sdk@0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@module-federation/sdk/-/sdk-0.0.13.tgz#d020dfb1a972f2569da0f76f0bb5fe9efdaf1782"
-  integrity sha512-ALapAGystaXSlwqGTcioPzGEhzKDVq+2U+MLXpm71/L/SaDOD54l8sqy8I/bdofay4c7rcrstlAlZfAwMmWW1g==
+"@module-federation/runtime@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/runtime/-/runtime-0.3.3.tgz#24b4c8bcf4919fcb451dcd07d965831847816908"
+  integrity sha512-/oDaI3j3DV4mDj84lOxfrYUnMIUVkWZb/LHSOb9rh80qxH7vBo6XR9s6+n5+ZXNpZnOzS5p10xFzcU8GguSFyA==
+  dependencies:
+    "@module-federation/sdk" "0.3.3"
 
 "@module-federation/sdk@0.1.21":
   version "0.1.21"
@@ -1008,6 +1069,11 @@
   resolved "https://registry.yarnpkg.com/@module-federation/sdk/-/sdk-0.1.6.tgz#4d64b206ef6bddd99ca74680f278a2134a493dd5"
   integrity sha512-qifXpyYLM7abUeEOIfv0oTkguZgRZuwh89YOAYIZJlkP6QbRG7DJMQvtM8X2yHXm9PTk0IYNnOJH0vNQCo6auQ==
 
+"@module-federation/sdk@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/sdk/-/sdk-0.3.3.tgz#510dd81746a725caf63beb2ac9128bb839cdd225"
+  integrity sha512-9tDxv2h61F5FD26gZCyOqsQurK0Wef2XpjwzDwOxK5x22md3vB3CJsKNzaTbt6lf+BIySgNdva1he+C94isPbg==
+
 "@module-federation/third-party-dts-extractor@0.1.21":
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/@module-federation/third-party-dts-extractor/-/third-party-dts-extractor-0.1.21.tgz#1c37aa4057ae618cb4b0dd5968e9adb3a7ed4744"
@@ -1017,13 +1083,14 @@
     fs-extra "9.1.0"
     resolve "1.22.8"
 
-"@module-federation/webpack-bundler-runtime@0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@module-federation/webpack-bundler-runtime/-/webpack-bundler-runtime-0.0.13.tgz#ee6c789a96a57db22e3a86de352f2631b0a3863b"
-  integrity sha512-yf8W8wngxnmLGlgqR5WfsqKPZvmcY1zhgqMYe20kguVZp8U7FBAt3sY6voL8S00hyEQD6i4+6yHW5vk1uFvMFA==
+"@module-federation/third-party-dts-extractor@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/third-party-dts-extractor/-/third-party-dts-extractor-0.3.3.tgz#ef22b01af92314af0c88e709beaf8d96353154bb"
+  integrity sha512-b1pJi7XSh56Xzv2d8BKfenSMboHerb0E4T5GSas4cQrnVb53pXp9OchfwmbAnzSJ/UAJZ2kYK3NDsJ6cnbTYnw==
   dependencies:
-    "@module-federation/runtime" "0.0.13"
-    "@module-federation/sdk" "0.0.13"
+    find-pkg "2.0.0"
+    fs-extra "9.1.0"
+    resolve "1.22.8"
 
 "@module-federation/webpack-bundler-runtime@0.1.21":
   version "0.1.21"
@@ -1040,6 +1107,14 @@
   dependencies:
     "@module-federation/runtime" "0.1.6"
     "@module-federation/sdk" "0.1.6"
+
+"@module-federation/webpack-bundler-runtime@0.3.3":
+  version "0.3.3"
+  resolved "https://bnpm.byted.org/@module-federation/webpack-bundler-runtime/-/webpack-bundler-runtime-0.3.3.tgz#46c02fa96340e7dbf8c08ebae9cc57aa1ee6acb7"
+  integrity sha512-9grVDBi9W3vqANaDFkEsQ10YAQOJ/jWvFvD5E7IKVzSH+rnMC1EpVQxT6Ye+uqof3ZFl6/ZtUlZXPr/hi/lYNA==
+  dependencies:
+    "@module-federation/runtime" "0.3.3"
+    "@module-federation/sdk" "0.3.3"
 
 "@mui/base@5.0.0-beta.2":
   version "5.0.0-beta.2"
@@ -2534,6 +2609,11 @@ bser@2.1.1:
   integrity sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ==
   dependencies:
     node-int64 "^0.4.0"
+
+btoa@^1.2.1:
+  version "1.2.1"
+  resolved "https://bnpm.byted.org/btoa/-/btoa-1.2.1.tgz#01a9909f8b2c93f6bf680ba26131eb30f7fa3d73"
+  integrity sha512-SB4/MIGlsiVkMcHmT+pSmIPoNDoHg+7cMzmt3Uxt628MTz2487DKSqK/fuhFBrkuqrYv5UCEnACpF4dTFNKc/g==
 
 buffer-from@^1.0.0:
   version "1.1.2"
@@ -7949,6 +8029,11 @@ ws@8.17.0:
   version "8.17.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.17.0.tgz#d145d18eca2ed25aaf791a183903f7be5e295fea"
   integrity sha512-uJq6108EgZMAl20KagGkzCKfMEjxmKvZHG7Tlq0Z6nOky7YF7aq4mOx6xK8TJ/i1LeK4Qus7INktacctDgY8Ow==
+
+ws@8.17.1:
+  version "8.17.1"
+  resolved "https://bnpm.byted.org/ws/-/ws-8.17.1.tgz#9293da530bb548febc95371d90f9c878727d919b"
+  integrity sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==
 
 ws@^8.11.0:
   version "8.18.0"

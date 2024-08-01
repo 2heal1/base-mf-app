@@ -1,11 +1,13 @@
 import { defineConfig, loadEnv, Rspack } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
 import pkg from "./package.json";
+import {ModuleFederationPlugin} from '@module-federation/enhanced/rspack'
 
 const NodePolyfillPlugin = require("@rspack/plugin-node-polyfill");
 const { publicVars } = loadEnv({ prefixes: ["REACT_APP_", "mfe_"] });
 
-const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
+const moduleFederationPluginOptions: ConstructorParameters<typeof ModuleFederationPlugin>[0] = {
+  dts:false,
   name: pkg.name.replace(/-/g, "_"),
   filename: "remoteEntry.js",
   exposes: {
@@ -40,6 +42,10 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
 
 export default defineConfig({
   plugins: [pluginReact()],
+  dev:{
+    writeToDisk:true,
+    assetPrefix:'http://localhost:3004'
+  },
   html: {
     template: "./public/index.html",
   },
@@ -59,13 +65,13 @@ export default defineConfig({
       output: {
         uniqueName: pkg.name,
       },
-      plugins: [new NodePolyfillPlugin()],
+      plugins: [new NodePolyfillPlugin(),new ModuleFederationPlugin(moduleFederationPluginOptions)],
     },
   },
   source: {
     define: publicVars,
   },
-  moduleFederation: {
-    options: moduleFederationPluginOptions,
-  },
+  // moduleFederation: {
+  //   options: moduleFederationPluginOptions,
+  // },
 });
