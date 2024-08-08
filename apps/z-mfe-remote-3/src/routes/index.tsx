@@ -32,7 +32,7 @@ export const routes = (
         element: (
           <Box>
             <Box>MFE: z-mfe-remote-3</Box>
-            external-package-version-display Required Version: 2.1.0
+            external-package-version-display Required Version: 2.1.4
             <VersionDisplay />
             <VersionDisplay2 />
             {/* <ExternalMFERemote2Component /> */}
