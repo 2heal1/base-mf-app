@@ -37,7 +37,7 @@ export const routes = (
         element: (
           <Box>
             <Box>MFE: mfe-remote-1-child-1</Box>
-            external-package-version-display Required Version: 2.1.2
+            external-package-version-display Required Version: 2.1.4
             <VersionDisplay />
             <VersionDisplay2 />
             {/* <ExternalZMFERemote3Component />
