@@ -62,6 +62,7 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
     "mfe-remote-1-child-1": `mfe_remote_1_child_1@${appDomainConfig["mfe_remote_1_child_1"].local}/remoteEntry.js`,
   },
   runtimePlugins: [require.resolve("./mfe-runtime-plugin.ts")],
+  implementation:require.resolve('@module-federation/runtime-tools')
 };
 
 export default defineConfig({

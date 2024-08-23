@@ -17,7 +17,14 @@ const CustomPlugin = (): FederationRuntimePlugin => {
 
   return {
     name: "backend-remote-control",
-
+    // it can be removed while this pr released https://github.com/web-infra-dev/rspack/pull/7651
+    beforeInit(args) {
+      const { userOptions } = args;
+      if (!userOptions.shareStrategy) {
+        userOptions.shareStrategy = 'version-first';
+      }
+      return args;
+    },
     init: async (args) => {
       await Promise.all(
         args.options.remotes.map(async (remote) => {

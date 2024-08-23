@@ -34,14 +34,26 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
       singleton: true,
       requiredVersion: pkg.dependencies["@cnapp-ui/mfe-utils"],
     },
+    "external-package-version-display-2": {
+      singleton: false,
+      // requiredVersion: false,
+    },
+    "external-package-version-display": {
+      singleton: false,
+      // requiredVersion: false,
+    },
   },
   runtimePlugins: [require.resolve("./mfe-runtime-plugin.ts")],
+  implementation:require.resolve('@module-federation/runtime-tools')
 };
 
 export default defineConfig({
   plugins: [pluginReact()],
   html: {
     template: "./public/index.html",
+  },
+  dev:{
+    writeToDisk:true
   },
   output: {
     sourceMap: {

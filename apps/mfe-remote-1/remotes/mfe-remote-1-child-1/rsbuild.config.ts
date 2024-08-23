@@ -40,6 +40,7 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
     },
   },
   runtimePlugins: [require.resolve("./mfe-runtime-plugin.ts")],
+  implementation:require.resolve('@module-federation/runtime-tools')
 };
 
 export default defineConfig({
