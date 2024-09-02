@@ -36,11 +36,13 @@ const moduleFederationPluginOptions: Rspack.ModuleFederationPluginOptions = {
     },
     "external-package-version-display-2": {
       singleton: false,
-      // requiredVersion: false,
+      requiredVersion: '1.0.0',
+      strictVersion:true
     },
     "external-package-version-display": {
       singleton: false,
-      // requiredVersion: false,
+      requiredVersion: '2.1.4',
+      strictVersion:true
     },
   },
   runtimePlugins: [require.resolve("./mfe-runtime-plugin.ts")],
